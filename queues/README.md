@@ -6,7 +6,7 @@ Can be implemented using a queue
 Tail - Newest element
 Head - First element
 
-A reference to the teail and head can be added so that peeking at either can be in constant time
+A reference to the tail and head can be added so that peeking at either can be in constant time
 
 - Enqueue - add to list
 - DeQueue - remove from list (head)
