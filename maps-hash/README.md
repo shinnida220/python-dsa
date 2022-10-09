@@ -59,3 +59,19 @@ In Linear Time
 
 The purpose of a hash function is to transform some value into one that can be stored and retrieved easily.
 You give it a value, it returns a coded version of the value (using a formula -> hash function) usu the index in an array
+
+# Hash Table / Hash Map
+
+HashMap - A type of data structure that maps keys to its value pairs. The keys are generated via a hash function. Also called dictionary, map, hash table or associative arrays.
+It doesn't allow duplicate keys
+It takes O(1) to insert, retrieve and delete
+In python, use dict
+The main components of a hashmap are:
+
+- Array (List) data structure used to store the data
+- Hash function - function used to convert the key into a numeric index
+- Coliision - When more than one key hashes to the same index. The performance of the hash function depends on not having many values in the same index
+- Collision Handling
+
+Hash Function
+index = sum(ascii value for each letter in key) % len(list)

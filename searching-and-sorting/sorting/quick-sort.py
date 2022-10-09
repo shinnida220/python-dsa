@@ -52,6 +52,24 @@ def swap(arr, i, j):
     return arr
 
 
+def quicksort2(array):
+    less = []
+    equal = []
+    greater = []
+    if len(array) > 1:
+        pivot = array[0]
+        for x in array:
+            if x < pivot:
+                less.append(x)
+            if x == pivot:
+                equal.append(x)
+            if x > pivot:
+                greater.append(x)
+        return sorted(less)+equal+sorted(greater)
+    else:
+        return array
+
+
 test = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
 test2 = [7, 2, 1, 6, 8, 5, 3, 4]
 print('-- Before Sorting --')
@@ -61,3 +79,6 @@ print(' ')
 print('-- After Sorting --')
 print(quicksort(test, 0, len(test) - 1))
 print(quicksort(test2, 0, len(test2) - 1))
+print('-- Using QS2 After Sorting --')
+print(quicksort2(test))
+print(quicksort2(test2))
