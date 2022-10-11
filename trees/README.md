@@ -70,4 +70,8 @@ O(n) as we have to move some nodes around
 
 Insert
 
-BST - Binary Search Tree
+### BST - Binary Search Tree
+
+Binary Search Trees are sorted. Every element on the left is less than those on the right.
+
+Unbalanced -> When the child distribution is not balanced
